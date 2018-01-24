@@ -1,0 +1,36 @@
+{
+  "name": "cme",
+  "version": "1.0.0",
+  "description": "Content Manage Engine",
+  "main": "index.js",
+  "scripts": {
+    "eslint:frontend": "node_modules/.bin/eslint frontend/jsnext/**/*.js",
+    "eslint:server": "node_modules/.bin/eslint server/**/*.js",
+    "eslint:test": "node_modules/.bin/eslint test",
+    "sasslint": "node_modules/.bin/sass-lint -v -q \"frontend/style/**/*.scss\"",
+    "precommit": "node_modules/.bin/run-p eslint:* && npm run sasslint",
+    "commitmsg": "node_modules/.bin/validate-commit-msg",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holyzfy/cme.git"
+  },
+  "keywords": [],
+  "author": "holyzfy <zhaofuyun202@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holyzfy/cme/issues"
+  },
+  "homepage": "https://github.com/holyzfy/cme#readme",
+  "dependencies": {
+    "bootstrap": "~4.0.0",
+    "eslint": "~4.16.0",
+    "husky": "~0.14.3",
+    "jquery": "~3.3.1",
+    "npm-run-all": "~4.1.2",
+    "popper.js": "~1.12.9",
+    "tape": "~4.8.0",
+    "validate-commit-msg": "~2.14.0"
+  }
+}
