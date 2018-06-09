@@ -2,4 +2,4 @@
 Content Manage Engine
 
 # Credits
-The project name was inspired by [@aixing](https://github.com/aixing).
+Thanks to [@aixing](https://github.com/aixing) for the name.
